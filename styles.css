@@ -1,0 +1,38 @@
+
+body {
+    background-image: url('imagens/fundo.png');
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0597;
+}
+
+.app {
+    text-align: center;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    background-color: #f30992;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+    background-color: rgb(211, 87, 163);
+}

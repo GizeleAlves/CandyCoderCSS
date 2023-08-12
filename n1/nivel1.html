@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandyCoder CSS - Nível 1</title>
+    <link rel="stylesheet" href="nivel1.css">
+</head>
+<body>
+    <div class="app">
+        <section id="instrucoes">
+            <h1>CandyCoder CSS</h1> <button id="dicaBtn">Ajuda</button>
+            
+            <p>Ajude a confeiteira a adicionar o doce dentro do prato sobre a mesa ao lado utilizando as propriedades do css! Digite seu comando abaixo e clique em mover. </p><div id="dica">
+            <p>Mova a rosquinha para dentro do prato utilizando as propriedades do CSS. Você pode utilizar  <span class="ajuda">justify-content</span> que alinha os ítens <b>horizontalmente</b>. Esta propriedade aceita os seguintes valores:</p>
+            <ul>
+                <li><span class="ajuda">flex-start</span>: alinha os ítens no lado esquerdo do container</li>
+                <li><span class="ajuda">flex-end</span>: alinha os ítens no lado direito do container</li>
+                <li><span class="ajuda">center</span>: alinha os ítens no centro horizontal do container</li>
+                <li><span class="ajuda">space-between</span>: mostra os ítens com espaços iguais entre eles</li>
+                <li><span class="ajuda">space-arround</span>: mostra os ítens com espaços iguais ao redor deles</li>
+            </ul>
+            <p>Por exemplo: Se você utilizar o comando <span class="ajuda">justify-content: center;</span> a rosquinha irá para o centro da parte superior do container</p>
+            </div>
+            
+            <div class="editor">
+                <div class="numeros">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+                <pre>#mesa {
+   display: flex;</pre>
+                <textarea spellcheck="false"></textarea>
+                <pre>}</pre>
+                <div class="botoes">
+                    <button id="voltar">Voltar</button>
+                    <button id="teste">Mover</button>
+                    <a href="../n2/nivel2.html">
+                        <button id="proximo">Próximo</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mesa">
+            <div id="frente">
+                <div class="ccontainer">
+                    <div class="comida rosquinha" style="transform: scale(0.91)"></div>
+                </div>
+            </div>
+
+            <div id="tras">
+                <div class="pcontainer">
+                    <div class="prato um"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const dicaBtn = document.getElementById('dicaBtn');
+        const dica = document.getElementById('dica');
+
+        dicaBtn.addEventListener('click', () => {
+            if (dica.style.display === 'none') {
+                dica.style.display = 'block';
+            } else {
+                dica.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="../app.js"></script>
+</body>
+</html>

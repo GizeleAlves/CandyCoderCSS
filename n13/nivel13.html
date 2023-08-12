@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandyCoder CSS - Nível 13</title>
+    <link rel="stylesheet" href="nivel13.css">
+</head>
+<body>
+    <div class="app">
+        <section id="instrucoes">
+            <h1>CandyCoder CSS</h1> <button id="dicaBtn">Ajuda</button>
+            
+            <p>Ajude a confeiteira a mover os alimentos para os pratos sobre a mesa ao lado utilizando as propriedades do css! Digite seu comando abaixo e clique em mover. </p><div id="dica">
+            <p>Utilize <span class="ajuda">flex-direction</span> e <span class="ajuda">flex-wrap</span> para organizar cada tipo de doce em uma coluna.</p>
+           <ul> 
+                <li><span class="ajuda">flex-direction</span> aceita os valores: <span class="ajuda">row</span>, <span class="ajuda">row-reverse</span>, <span class="ajuda">column</span> e <span class="ajuda">column-reverse</span>.
+                </li><br>
+                <li><span class="ajuda">flex-wrap</span> aceita os valores: <span class="ajuda">nowrap</span>, <span class="ajuda">wrap</span> e <span class="ajuda">wrap-reverse</span>.
+                </li>
+                
+            </ul>
+            </div>
+            
+            <div class="editor">
+                <div class="numeros">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+                <pre>#mesa {
+   display: flex;</pre>
+                <textarea spellcheck="false"></textarea>
+                <pre>}</pre>
+                <div class="botoes">
+                    <button id="voltar">Voltar</button>
+                    <button id="teste">Mover</button>
+                    <a href="../n14/nivel14.html">
+                        <button id="proximo">Próximo</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mesa">
+            <div id="frente">
+                <div class="ccontainer">
+                    <div class="comida cup" style="transform: scale(0.85)"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida cup" style="transform: scale(0.85)"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida cup" style="transform: scale(0.85)"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida cup" style="transform: scale(0.85)"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida cup" style="transform: scale(0.85)"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida pudin"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida pudin"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida pudin"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida pudin"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida pudin"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida sorvete"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida sorvete"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida sorvete"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida sorvete"></div>
+                </div>
+                <div class="ccontainer">
+                    <div class="comida sorvete"></div>
+                </div>
+            </div>
+
+            <div id="tras">
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+                <div class="pcontainer">
+                    <div class="prato um" style="transform: scale(0.95)"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const dicaBtn = document.getElementById('dicaBtn');
+        const dica = document.getElementById('dica');
+
+        dicaBtn.addEventListener('click', () => {
+            if (dica.style.display === 'none') {
+                dica.style.display = 'block';
+            } else {
+                dica.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="../app.js"></script>
+</body>
+</html>
