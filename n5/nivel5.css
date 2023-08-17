@@ -30,6 +30,23 @@ h1{
     background-color: rgb(211, 87, 163);
 }
 
+#homeBtn {
+    position: absolute;
+    top: 50px;
+    right: 60px; /* Ajuste a posição horizontal conforme necessário */
+    background-color: #f30992;
+    color: white;
+    border: none;
+    border-radius: 40%;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#homeBtn:hover {
+    background-color: rgb(211, 87, 163);
+}
 
 p, li{
     font-family: 'PT Sans', sans-serif;
