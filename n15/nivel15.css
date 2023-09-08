@@ -69,7 +69,7 @@ p, li{
     position: relative;
 }
 
-#dica{
+#dica, #respostaCorreta, #respostaCorreta2, #respostaCorreta3, #respostaCorreta4, #respostaCorreta5, #respostaCorreta6{
     display: none;
 }
 
@@ -120,6 +120,14 @@ textarea{
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+button:disabled {
+    background-color: #ccc; /* Cor de fundo */
+    color: #999; /* Cor do texto */
+    cursor: not-allowed; /* Cursor personalizado */
+    opacity: 0.3; /* Opacidade reduzida */
+    /* Outros estilos personalizados, como bordas, sombras, etc. */
 }
 
 .botoes button {
